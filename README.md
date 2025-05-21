@@ -41,15 +41,15 @@ mini_blog_project/
 ```bash
 git clone https://github.com/saahilkhan1/miniblog
 1 install requirement.txt
-2. Create virtual environment
+2. Create virtual environment in project-root directory # cmd python -m venv env
 3. pip install -r requirements.txt
 4. python manage.py migrate
 5. python manage.py createsuperuser
 6. python manage.py runserver
+7. .gitignore                   # user for if don’t want unnecessary files on server.
 
 
 # API Endpoints
-```bash
 Endpoint	Method  Description	Auth Required
 
 /api/register/	POST	Register new user	No

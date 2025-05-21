@@ -37,6 +37,7 @@ def post_list_create(request):
     if request.method == 'GET':
         posts = Blog.objects.all()
         serializer = BlogSerializer(posts, many=True)
+        print('check the response -------',serializer.data)
         return Response(serializer.data)
     
     elif request.method == 'POST':
